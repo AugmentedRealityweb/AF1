@@ -40,6 +40,18 @@
             margin: auto;
             padding: 20px;
         }
+        @keyframes levitate {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        .levitate {
+            display: inline-block;
+            animation: levitate 1s ease-in-out infinite;
+        }
     </style>
 </head>
 <body>
