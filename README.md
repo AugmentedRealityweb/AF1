@@ -10,6 +10,9 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
+            background-image: url('backgroundpic.jpg'); /* Adaugă imaginea ca fundal */
+            background-size: cover; /* Asigură-te că imaginea de fundal acoperă întreaga pagină */
+            background-position: center; /* Centrează imaginea de fundal */
         }
         .model-container {
             display: flex;
