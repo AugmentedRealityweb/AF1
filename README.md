@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -73,6 +74,23 @@
             color: #FFFFFF; /* Culoarea textului, alegeți o culoare care se potrivește cu fundalul */
             font-size: 1.2em; /* Mărimea textului */
         }
+        .navigation-links {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            padding: 20px;
+        }
+        .navigation-link {
+            text-decoration: none;
+            color: white;
+            background-color: #007BFF;
+            padding: 10px 20px;
+            border-radius: 20px;
+            transition: background-color 0.3s;
+        }
+        .navigation-link:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
@@ -129,6 +147,11 @@
         </model-viewer>
         <p>Nike AirForce 1</p>
     </div>
+</div>
+
+<div class="navigation-links">
+    <a href="https://augmentedrealityweb.github.io/Produse2/" class="navigation-link">Pagina Precedentă</a>
+    <a href="https://augmentedrealityweb.github.io/produse2/" class="navigation-link">Pagina Următoare</a>
 </div>
 
 </body>
