@@ -33,7 +33,7 @@
         }
         model-viewer {
             width: 200px; /* Dimensiunea a fost setată la 200px */
-            height: 200px; /* Înălțimea a fost setată la 200px */
+            height: 100px; /* Înălțimea a fost setată la 200px */
             margin: 0 auto; /* Centrarea modelului */
         }
         .ar-button {
@@ -79,24 +79,7 @@
 <body>
 
 <div class="model-container">
-    <!-- Model 1: Adidas -->
-    <div class="model-section">
-        <model-viewer 
-            src="adidas.glb" 
-            ios-src="adidas.usdz" 
-            ar 
-            ar-modes="webxr scene-viewer quick-look" 
-            camera-controls 
-            auto-rotate 
-            environment-image="neutral" 
-            shadow-intensity="1"
-            min-camera-orbit="auto 0deg 0deg" 
-            max-camera-orbit="auto 80deg auto">
-            <button slot="ar-button" class="ar-button">Activează modul AR</button>
-        </model-viewer>
-        <p>Nike Free Matcon</p>
-    </div>
-    <!-- Model 2: Jordan -->
+    <!-- Model 2: Jordan (Acum pe prima poziție) -->
     <div class="model-section">
         <model-viewer 
             src="jordan.glb" 
@@ -113,7 +96,24 @@
         </model-viewer>
         <p>Jordan Air 200E</p>
     </div>
-    <!-- Model 3: Nike -->
+    <!-- Model 1: Adidas (Acum pe a doua poziție) -->
+    <div class="model-section">
+        <model-viewer 
+            src="adidas.glb" 
+            ios-src="adidas.usdz" 
+            ar 
+            ar-modes="webxr scene-viewer quick-look" 
+            camera-controls 
+            auto-rotate 
+            environment-image="neutral" 
+            shadow-intensity="1"
+            min-camera-orbit="auto 0deg 0deg" 
+            max-camera-orbit="auto 80deg auto">
+            <button slot="ar-button" class="ar-button">Activează modul AR</button>
+        </model-viewer>
+        <p>Nike Free Matcon</p>
+    </div>
+    <!-- Model 3: Nike (Rămâne pe a treia poziție) -->
     <div class="model-section">
         <model-viewer 
             src="nike.glb" 
