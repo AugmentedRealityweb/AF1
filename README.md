@@ -10,9 +10,20 @@
             padding: 0;
             font-family: Arial, sans-serif;
         }
+        .model-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        .model-section {
+            width: 30%;
+            margin-bottom: 40px;
+        }
         model-viewer {
             width: 100%;
-            height: 300px;
+            height: 200px;
         }
         .navigation {
             display: flex;
@@ -52,55 +63,55 @@
             display: inline-block;
             animation: levitate 1s ease-in-out infinite;
         }
-        .model-section {
-            margin-bottom: 40px;
-        }
     </style>
 </head>
 <body>
 
 <div class="content">
-    <div class="model-section">
-        <h2 style="text-align: center;"><a id="mainTitle1" href="#" target="_blank">Titlu Produs</a></h2>
-        <h3 id="subtitle1">Subtitlu Produs</h3>
-        <model-viewer 
-            id="modelViewer1" 
-            src="adidas.glb" 
-            ios-src="adidas.usdz" 
-            ar 
-            ar-modes="webxr scene-viewer quick-look" 
-            camera-controls 
-            auto-rotate 
-            environment-image="neutral" 
-            shadow-intensity="1" 
-            alt="Produs"
-            min-camera-orbit="auto 0deg 0deg" 
-            max-camera-orbit="auto 80deg auto">
-            <button slot="ar-button" class="ar-button">
-                <span class="levitate">👋</span> Activează modul AR
-            </button>
-        </model-viewer>
-    </div>
-    <div class="model-section">
-        <h2 style="text-align: center;"><a id="mainTitle2" href="#" target="_blank">Titlu Produs</a></h2>
-        <h3 id="subtitle2">Subtitlu Produs</h3>
-        <model-viewer 
-            id="modelViewer2" 
-            src="noodle.glb" 
-            ios-src="noodle.usdz" 
-            ar 
-            ar-modes="webxr scene-viewer quick-look" 
-            camera-controls 
-            auto-rotate 
-            environment-image="neutral" 
-            shadow-intensity="1" 
-            alt="Produs"
-            min-camera-orbit="auto 0deg 0deg" 
-            max-camera-orbit="auto 80deg auto">
-            <button slot="ar-button" class="ar-button">
-                <span class="levitate">👋</span> Activează modul AR
-            </button>
-        </model-viewer>
+    <div class="model-container">
+        <div class="model-section">
+            <h2 style="text-align: center;"><a id="mainTitle1" href="#" target="_blank">Titlu Produs</a></h2>
+            <h3 id="subtitle1">Subtitlu Produs</h3>
+            <model-viewer 
+                id="modelViewer1" 
+                src="adidas.glb" 
+                ios-src="adidas.usdz" 
+                ar 
+                ar-modes="webxr scene-viewer quick-look" 
+                camera-controls 
+                auto-rotate 
+                environment-image="neutral" 
+                shadow-intensity="1" 
+                alt="Produs"
+                min-camera-orbit="auto 0deg 0deg" 
+                max-camera-orbit="auto 80deg auto">
+                <button slot="ar-button" class="ar-button">
+                    <span class="levitate">👋</span> Activează modul AR
+                </button>
+            </model-viewer>
+        </div>
+        <div class="model-section">
+            <h2 style="text-align: center;"><a id="mainTitle2" href="#" target="_blank">Titlu Produs</a></h2>
+            <h3 id="subtitle2">Subtitlu Produs</h3>
+            <model-viewer 
+                id="modelViewer2" 
+                src="noodle.glb" 
+                ios-src="noodle.usdz" 
+                ar 
+                ar-modes="webxr scene-viewer quick-look" 
+                camera-controls 
+                auto-rotate 
+                environment-image="neutral" 
+                shadow-intensity="1" 
+                alt="Produs"
+                min-camera-orbit="auto 0deg 0deg" 
+                max-camera-orbit="auto 80deg auto">
+                <button slot="ar-button" class="ar-button">
+                    <span class="levitate">👋</span> Activează modul AR
+                </button>
+            </model-viewer>
+        </div>
+        <!-- Adaugă modele suplimentare aici -->
     </div>
 </div>
 
@@ -111,6 +122,9 @@
     const models = [
         { viewer: modelViewer1, titleElementId: 'mainTitle1', subtitleElementId: 'subtitle1', file: "adidas.glb", iosFile: "adidas.usdz", title: "Cumpără acum Adidas Samba OG", url: "https://unfazed.ro/products/adidas-samba-og-cloud-white?_pos=1&_sid=6d480c095&_ss=r", subtitle: "Adidas Samba OG \"Cloud White\"", features: "" },
         { viewer: modelViewer2, titleElementId: 'mainTitle2', subtitleElementId: 'subtitle2', file: "noodle.glb", iosFile: "noodle.usdz", title: "Descoperă Noodle-ul nostru de top", url: "#", subtitle: "Noodle - Gust și Aromă Inegalabilă", features: "" }
+         { file: "jordan.glb", iosFile: "jordan.usdz", title: "Cumpără acum Air Jordan 4 Retro", url: "https://unfazed.ro/products/air-jordan-4-retro-se-craft-medium-olive", subtitle: "Air Jordan 4 Retro SE Craft \"Medium Olive\"", features: "" },
+{ file: "nike.glb", iosFile: "nike.usdz", title: "Cumpără acum Nike Air Force 1", url: "https://unfazed.ro/products/nike-air-force-1-low-triple-white", subtitle: "Nike Air Force 1 Low \"Triple White\"", features: "" },
+    { file: "scaun.glb", iosFile: "scaun.usdz", title: "Descoperă noul nostru Scaun Confortabil", url: "#", subtitle: "Scaun Confortabil - Design Modern", features: "" },
     ];
 
     function updateModels() {
