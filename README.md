@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produse de calitate superioară</title>
+    <title>Modele AR Simplificate</title>
     <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
     <style>
         body {
@@ -14,7 +14,7 @@
         .model-container {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around; /* Modificat pentru a centra modelele pe pagina */
+            justify-content: space-around;
             margin: 20px auto;
             max-width: 1200px;
         }
@@ -28,21 +28,11 @@
             width: 100%;
             height: 300px;
         }
-        .content {
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px;
-        }
-        h2, h3 {
-            margin: 10px 0; /* Redus pentru a economisi spațiu */
-            font-size: 0.9rem; /* Text mai mic pentru titlu și subtitlu */
-            text-align: center;
-        }
         .ar-button {
             display: block;
             margin: 10px auto;
             padding: 5px 10px;
-            font-size: 0.8rem; /* Text mai mic pentru buton */
+            font-size: 0.8rem;
             cursor: pointer;
             background-color: #007BFF;
             border: none;
@@ -59,25 +49,21 @@
 </head>
 <body>
 
-<div class="content">
-    <div class="model-container" id="models"></div>
-</div>
+<div class="model-container" id="models"></div>
 
 <script>
     const models = [
-        { id: 'model1', file: "adidas.glb", iosFile: "adidas.usdz", title: "Cumpără acum Adidas Samba OG", url: "https://unfazed.ro/products/adidas-samba-og-cloud-white?_pos=1&_sid=6d480c095&_ss=r", subtitle: "Adidas Samba OG \"Cloud White\"" },
-        { id: 'model2', file: "noodle.glb", iosFile: "noodle.usdz", title: "Descoperă Noodle-ul nostru de top", url: "#", subtitle: "Noodle - Gust și Aromă Inegalabilă" },
-        { id: 'model3', file: "jordan.glb", iosFile: "jordan.usdz", title: "Cumpără acum Air Jordan 4 Retro", url: "https://unfazed.ro/products/air-jordan-4-retro-se-craft-medium-olive", subtitle: "Air Jordan 4 Retro SE Craft \"Medium Olive\"" },
-        { id: 'model4', file: "nike.glb", iosFile: "nike.usdz", title: "Cumpără acum Nike Air Force 1", url: "https://unfazed.ro/products/nike-air-force-1-low-triple-white", subtitle: "Nike Air Force 1 Low \"Triple White\"" },
-        { id: 'model5', file: "scaun.glb", iosFile: "scaun.usdz", title: "Descoperă noul nostru Scaun Confortabil", url: "#", subtitle: "Scaun Confortabil - Design Modern" }
+        { file: "adidas.glb", iosFile: "adidas.usdz" },
+        { file: "noodle.glb", iosFile: "noodle.usdz" },
+        { file: "jordan.glb", iosFile: "jordan.usdz" },
+        { file: "nike.glb", iosFile: "nike.usdz" },
+        { file: "scaun.glb", iosFile: "scaun.usdz" }
     ];
 
     models.forEach(model => {
         const modelSection = document.createElement('div');
         modelSection.classList.add('model-section');
         modelSection.innerHTML = `
-            <h2><a href="${model.url}" target="_blank">${model.title}</a></h2>
-            <h3>${model.subtitle}</h3>
             <model-viewer 
                 src="${model.file}" 
                 ios-src="${model.iosFile}" 
@@ -86,11 +72,10 @@
                 camera-controls 
                 auto-rotate 
                 environment-image="neutral" 
-                shadow-intensity="1" 
-                alt="${model.subtitle}"
+                shadow-intensity="1"
                 min-camera-orbit="auto 0deg 0deg" 
                 max-camera-orbit="auto 80deg auto">
-                <button slot="ar-button" class="ar-button">👋 Activează modul AR</button>
+                <button slot="ar-button" class="ar-button">Activează modul AR</button>
             </model-viewer>
         `;
         document.getElementById('models').appendChild(modelSection);
