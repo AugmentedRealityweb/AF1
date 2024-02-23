@@ -89,7 +89,9 @@
         { file: "jordan.glb", iosFile: "jordan.usdz", title: "Cumpără acum Air Jordan 4 Retro", url: "https://unfazed.ro/products/air-jordan-4-retro-se-craft-medium-olive", subtitle: "Air Jordan 4 Retro SE Craft \"Medium Olive\"", features: "" },
         { file: "adidas.glb", iosFile: "adidas.usdz", title: "Cumpără acum Adidas Samba OG", url: "https://unfazed.ro/products/adidas-samba-og-cloud-white?_pos=1&_sid=6d480c095&_ss=r", subtitle: "Adidas Samba OG \"Cloud White\"", features: "" },
         { file: "nike.glb", iosFile: "nike.usdz", title: "Cumpără acum Nike Air Force 1", url: "https://unfazed.ro/products/nike-air-force-1-low-triple-white", subtitle: "Nike Air Force 1 Low \"Triple White\"", features: "" },
-        { file: "scaun.glb", iosFile: "scaun.usdz", title: "Descoperă noul nostru Scaun Confortabil", url: "#", subtitle: "Scaun Confortabil - Design Modern", features: "" }
+        { file: "scaun.glb", iosFile: "scaun.usdz", title: "Descoperă noul nostru Scaun Confortabil", url: "#", subtitle: "Scaun Confortabil - Design Modern", features: "" },
+        // Adaugarea noului model
+        { file: "noodle.glb", iosFile: "noodle.usdz", title: "Descoperă Noodle-ul nostru de top", url: "#", subtitle: "Noodle - Gust și Aromă Inegalabilă", features: "" }
     ];
     let currentIndex = 0;
 
