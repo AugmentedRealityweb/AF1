@@ -13,26 +13,30 @@
             background-image: url('bkgd.jpg'); /* Schimbă imaginea de fundal */
             background-size: cover; /* Asigură-te că imaginea de fundal acoperă întreaga pagină */
             background-position: center; /* Centrează imaginea de fundal */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
         .model-container {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            margin: 20px auto;
-            max-width: 1200px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
         .model-section {
-            width: 30%;
-            margin-bottom: 40px;
-            box-sizing: border-box;
-            padding: 0 10px;
+            width: auto;
+            margin: 20px;
         }
         model-viewer {
-            width: 100%;
-            height: 250px; /* Mărimea a fost mărită la 250px */
+            width: 300px; /* Dimensiunea a fost mărită la 300px */
+            height: 300px; /* Înălțimea a fost setată la 300px */
+            margin: 0 auto; /* Centrarea modelului */
         }
         .ar-button {
-            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             margin: 10px auto;
             padding: 5px 10px;
             font-size: 0.8rem;
@@ -47,6 +51,20 @@
         .ar-button:hover {
             background-color: #0056b3;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .ar-button:before {
+            content: '👉';
+            display: inline-block;
+            margin-right: 8px;
+            animation: levitate 0.5s ease-in-out infinite alternate;
+        }
+        @keyframes levitate {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(-5px);
+            }
         }
     </style>
 </head>
