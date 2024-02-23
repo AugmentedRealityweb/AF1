@@ -31,8 +31,8 @@
             margin: 20px;
         }
         model-viewer {
-            width: 300px; /* Dimensiunea a fost mărită la 300px */
-            height: 300px; /* Înălțimea a fost setată la 300px */
+            width: 200px; /* Dimensiunea a fost mărită la 300px */
+            height: 200px; /* Înălțimea a fost setată la 300px */
             margin: 0 auto; /* Centrarea modelului */
         }
         .ar-button {
