@@ -1,9 +1,8 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modele AR Simplificate</title>
+    <title>Modele AR Optimizate</title>
     <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
     <style>
         body {
@@ -26,7 +25,7 @@
         }
         model-viewer {
             width: 100%;
-            height: 300px;
+            height: 250px; /* Mărimea a fost mărită la 250px */
         }
         .ar-button {
             display: block;
@@ -49,38 +48,56 @@
 </head>
 <body>
 
-<div class="model-container" id="models"></div>
-
-<script>
-    const models = [
-        { file: "adidas.glb", iosFile: "adidas.usdz" },
-        { file: "noodle.glb", iosFile: "noodle.usdz" },
-        { file: "jordan.glb", iosFile: "jordan.usdz" },
-        { file: "nike.glb", iosFile: "nike.usdz" },
-        { file: "scaun.glb", iosFile: "scaun.usdz" }
-    ];
-
-    models.forEach(model => {
-        const modelSection = document.createElement('div');
-        modelSection.classList.add('model-section');
-        modelSection.innerHTML = `
-            <model-viewer 
-                src="${model.file}" 
-                ios-src="${model.iosFile}" 
-                ar 
-                ar-modes="webxr scene-viewer quick-look" 
-                camera-controls 
-                auto-rotate 
-                environment-image="neutral" 
-                shadow-intensity="1"
-                min-camera-orbit="auto 0deg 0deg" 
-                max-camera-orbit="auto 80deg auto">
-                <button slot="ar-button" class="ar-button">Activează modul AR</button>
-            </model-viewer>
-        `;
-        document.getElementById('models').appendChild(modelSection);
-    });
-</script>
+<div class="model-container">
+    <!-- Model 1: Adidas -->
+    <div class="model-section">
+        <model-viewer 
+            src="adidas.glb" 
+            ios-src="adidas.usdz" 
+            ar 
+            ar-modes="webxr scene-viewer quick-look" 
+            camera-controls 
+            auto-rotate 
+            environment-image="neutral" 
+            shadow-intensity="1"
+            min-camera-orbit="auto 0deg 0deg" 
+            max-camera-orbit="auto 80deg auto">
+            <button slot="ar-button" class="ar-button">Activează modul AR</button>
+        </model-viewer>
+    </div>
+    <!-- Model 2: Jordan -->
+    <div class="model-section">
+        <model-viewer 
+            src="jordan.glb" 
+            ios-src="jordan.usdz" 
+            ar 
+            ar-modes="webxr scene-viewer quick-look" 
+            camera-controls 
+            auto-rotate 
+            environment-image="neutral" 
+            shadow-intensity="1"
+            min-camera-orbit="auto 0deg 0deg" 
+            max-camera-orbit="auto 80deg auto">
+            <button slot="ar-button" class="ar-button">Activează modul AR</button>
+        </model-viewer>
+    </div>
+    <!-- Model 3: Nike -->
+    <div class="model-section">
+        <model-viewer 
+            src="nike.glb" 
+            ios-src="nike.usdz" 
+            ar 
+            ar-modes="webxr scene-viewer quick-look" 
+            camera-controls 
+            auto-rotate 
+            environment-image="neutral" 
+            shadow-intensity="1"
+            min-camera-orbit="auto 0deg 0deg" 
+            max-camera-orbit="auto 80deg auto">
+            <button slot="ar-button" class="ar-button">Activează modul AR</button>
+        </model-viewer>
+    </div>
+</div>
 
 </body>
 </html>
