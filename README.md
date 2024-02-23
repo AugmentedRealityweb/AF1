@@ -29,10 +29,11 @@
         }
         .model-section {
             margin: 20px;
+            text-align: center; /* Centrarea textului sub modele */
         }
         model-viewer {
-            width: 200px; /* Dimensiunea a fost mărită la 300px */
-            height: 200px; /* Înălțimea a fost setată la 300px */
+            width: 200px; /* Dimensiunea a fost setată la 200px */
+            height: 200px; /* Înălțimea a fost setată la 200px */
             margin: 0 auto; /* Centrarea modelului */
         }
         .ar-button {
@@ -68,6 +69,11 @@
                 transform: translateY(-5px);
             }
         }
+        p {
+            margin-top: 10px; /* Spațiu între buton și text */
+            color: #FFFFFF; /* Culoarea textului, alegeți o culoare care se potrivește cu fundalul */
+            font-size: 1.2em; /* Mărimea textului */
+        }
     </style>
 </head>
 <body>
@@ -88,6 +94,7 @@
             max-camera-orbit="auto 80deg auto">
             <button slot="ar-button" class="ar-button">Activează modul AR</button>
         </model-viewer>
+        <p>Nike Free Matcon</p>
     </div>
     <!-- Model 2: Jordan -->
     <div class="model-section">
@@ -104,6 +111,7 @@
             max-camera-orbit="auto 80deg auto">
             <button slot="ar-button" class="ar-button">Activează modul AR</button>
         </model-viewer>
+        <p>Jordan Air 200E</p>
     </div>
     <!-- Model 3: Nike -->
     <div class="model-section">
@@ -120,6 +128,7 @@
             max-camera-orbit="auto 80deg auto">
             <button slot="ar-button" class="ar-button">Activează modul AR</button>
         </model-viewer>
+        <p>Nike AirForce 1</p>
     </div>
 </div>
 
