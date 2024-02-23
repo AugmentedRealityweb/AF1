@@ -24,7 +24,7 @@
             justify-content: center; /* Centrarea pe orizontală */
             flex-wrap: wrap; /* Permite modelelor să treacă pe rândul următor dacă nu încap */
             width: 100%; /* Asigură că containerul ocupă lățimea ecranului */
-            max-width: 800px; /* O limită maximă pentru a menține design-ul organizat */
+            max-width: 400px; /* O limită maximă pentru a menține design-ul organizat */
         }
         .model-section {
             margin: 10px;
