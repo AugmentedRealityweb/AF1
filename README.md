@@ -20,12 +20,14 @@
         }
         .model-container {
             display: flex;
-            flex-direction: column;
+            flex-direction: row; /* Schimbat în row pentru aliniere orizontală */
             align-items: center;
-            justify-content: center;
+            justify-content: center; /* Centrarea pe orizontală */
+            flex-wrap: wrap; /* Permite modelelor să treacă pe rândul următor dacă nu încap */
+            width: 100%; /* Asigură că containerul ocupă lățimea ecranului */
+            max-width: 1200px; /* O limită maximă pentru a menține design-ul organizat */
         }
         .model-section {
-            width: auto;
             margin: 20px;
         }
         model-viewer {
