@@ -55,18 +55,28 @@
             background-color: #0056b3;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
+        .ar-button:before {
+            content: '👉';
+            display: inline-block;
+            margin-right: 8px;
+            animation: levitate 0.5s ease-in-out infinite alternate;
+        }
+        @keyframes levitate {
+            from { transform: translateY(0); }
+            to { transform: translateY(-5px); }
+        }
         p {
             margin-top: 10px; 
             color: #FFFFFF; 
             font-size: 1.2em; 
         }
-        .navigation-links {
+        .back-button {
             display: flex;
-            justify-content: center; /* Ajustat pentru a centra butonul */
+            justify-content: center;
             width: 100%;
             padding: 20px;
         }
-        .navigation-link {
+        .back-link {
             text-decoration: none;
             color: white;
             background-color: #007BFF;
@@ -74,7 +84,7 @@
             border-radius: 20px;
             transition: background-color 0.3s;
         }
-        .navigation-link:hover {
+        .back-link:hover {
             background-color: #0056b3;
         }
     </style>
@@ -82,11 +92,58 @@
 <body>
 
 <div class="model-container">
-    <!-- Conținutul secțiunilor model rămâne neschimbat -->
+    <div class="model-section">
+        <model-viewer 
+            src="jordan.glb" 
+            ios-src="jordan.usdz" 
+            ar 
+            ar-modes="webxr scene-viewer quick-look" 
+            camera-controls 
+            auto-rotate 
+            environment-image="neutral" 
+            shadow-intensity="1"
+            min-camera-orbit="auto 0deg 0deg" 
+            max-camera-orbit="auto 80deg auto">
+            <button slot="ar-button" class="ar-button">Activează modul AR</button>
+        </model-viewer>
+        <p>Jordan Air 200E</p>
+    </div>
+    <div class="model-section">
+        <model-viewer 
+            src="adidas.glb" 
+            ios-src="adidas.usdz" 
+            ar 
+            ar-modes="webxr scene-viewer quick-look" 
+            camera-controls 
+            auto-rotate 
+            environment-image="neutral" 
+            shadow-intensity="1"
+            min-camera-orbit="auto 0deg 0deg" 
+            max-camera-orbit="auto 80deg auto">
+            <button slot="ar-button" class="ar-button">Activează modul AR</button>
+        </model-viewer>
+        <p>Nike Free Matcon</p>
+    </div>
+    <div class="model-section">
+        <model-viewer 
+            src="nike.glb" 
+            ios-src="nike.usdz" 
+            ar 
+            ar-modes="webxr scene-viewer quick-look" 
+            camera-controls 
+            auto-rotate 
+            environment-image="neutral" 
+            shadow-intensity="1"
+            min-camera-orbit="auto 0deg 0deg" 
+            max-camera-orbit="auto 80deg auto">
+            <button slot="ar-button" class="ar-button">Activează modul AR</button>
+        </model-viewer>
+        <p>Nike AirForce 1</p>
+    </div>
 </div>
 
-<div class="navigation-links">
-    <a href="https://augmentedrealityweb.github.io/toate-produsele/" class="navigation-link">Înapoi la meniul principal</a>
+<div class="back-button">
+    <a href="https://augmentedrealityweb.github.io/toate-produsele/" class="back-link">Înapoi la meniul principal</a>
 </div>
 
 </body>
