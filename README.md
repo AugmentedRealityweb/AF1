@@ -27,7 +27,7 @@
             max-width: 800px; /* O limită maximă pentru a menține design-ul organizat */
         }
         .model-section {
-            margin: 20px;
+            margin: 10px;
             text-align: center; /* Centrarea textului sub modele */
         }
         model-viewer {
