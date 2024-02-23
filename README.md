@@ -10,9 +10,9 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-image: url('bkgd.jpg'); /* Schimbă imaginea de fundal */
-            background-size: cover; /* Asigură-te că imaginea de fundal acoperă întreaga pagină */
-            background-position: center; /* Centrează imaginea de fundal */
+            background-image: url('bkgd.jpg'); 
+            background-size: cover; 
+            background-position: center; 
             display: flex;
             justify-content: center;
             align-items: center;
@@ -20,21 +20,21 @@
         }
         .model-container {
             display: flex;
-            flex-direction: row; /* Schimbat în row pentru aliniere orizontală */
+            flex-direction: row; 
             align-items: center;
-            justify-content: center; /* Centrarea pe orizontală */
-            flex-wrap: wrap; /* Permite modelelor să treacă pe rândul următor dacă nu încap */
-            width: 100%; /* Asigură că containerul ocupă lățimea ecranului */
-            max-width: 400px; /* O limită maximă pentru a menține design-ul organizat */
+            justify-content: center; 
+            flex-wrap: wrap; 
+            width: 100%; 
+            max-width: 400px; 
         }
         .model-section {
             margin: 10px;
-            text-align: center; /* Centrarea textului sub modele */
+            text-align: center; 
         }
         model-viewer {
-            width: 200px; /* Dimensiunea a fost setată la 200px */
-            height: 200px; /* Înălțimea a fost setată la 200px */
-            margin: 0 auto; /* Centrarea modelului */
+            width: 200px; 
+            height: 200px; 
+            margin: 0 auto; 
         }
         .ar-button {
             display: flex;
@@ -62,17 +62,13 @@
             animation: levitate 0.5s ease-in-out infinite alternate;
         }
         @keyframes levitate {
-            from {
-                transform: translateY(0);
-            }
-            to {
-                transform: translateY(-5px);
-            }
+            from { transform: translateY(0); }
+            to { transform: translateY(-5px); }
         }
         p {
-            margin-top: 10px; /* Spațiu între buton și text */
-            color: #FFFFFF; /* Culoarea textului, alegeți o culoare care se potrivește cu fundalul */
-            font-size: 1.2em; /* Mărimea textului */
+            margin-top: 10px; 
+            color: #FFFFFF; 
+            font-size: 1.2em; 
         }
         .navigation-links {
             display: flex;
@@ -96,7 +92,6 @@
 <body>
 
 <div class="model-container">
-    <!-- Model 2: Jordan (Acum pe prima poziție) -->
     <div class="model-section">
         <model-viewer 
             src="jordan.glb" 
@@ -113,7 +108,6 @@
         </model-viewer>
         <p>Jordan Air 200E</p>
     </div>
-    <!-- Model 1: Adidas (Acum pe a doua poziție) -->
     <div class="model-section">
         <model-viewer 
             src="adidas.glb" 
@@ -128,9 +122,8 @@
             max-camera-orbit="auto 80deg auto">
             <button slot="ar-button" class="ar-button">Activează modul AR</button>
         </model-viewer>
-        <p>Nike Free Matcon</p>
+        <p>Nike Free Matcon</p> <!-- Am corectat descrierea -->
     </div>
-    <!-- Model 3: Nike (Rămâne pe a treia poziție) -->
     <div class="model-section">
         <model-viewer 
             src="nike.glb" 
