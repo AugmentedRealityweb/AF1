@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -25,7 +24,7 @@
             justify-content: center; /* Centrarea pe orizontală */
             flex-wrap: wrap; /* Permite modelelor să treacă pe rândul următor dacă nu încap */
             width: 100%; /* Asigură că containerul ocupă lățimea ecranului */
-            max-width: 1200px; /* O limită maximă pentru a menține design-ul organizat */
+            max-width: 1000px; /* O limită maximă pentru a menține design-ul organizat */
         }
         .model-section {
             margin: 20px;
@@ -33,7 +32,7 @@
         }
         model-viewer {
             width: 200px; /* Dimensiunea a fost setată la 200px */
-            height: 100px; /* Înălțimea a fost setată la 200px */
+            height: 200px; /* Înălțimea a fost setată la 200px */
             margin: 0 auto; /* Centrarea modelului */
         }
         .ar-button {
