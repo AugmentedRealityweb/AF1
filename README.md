@@ -144,7 +144,7 @@
 
 <div class="navigation-links">
     <a href="https://augmentedrealityweb.github.io/produse2/" class="navigation-link">Pagina Precedentă</a>
-    <a href="https://augmentedrealityweb.github.io/produse2/" class="navigation-link">Pagina Următoare</a>
+    <a href="https://augmentedrealityweb.github.io/Produse/" class="navigation-link">Pagina Următoare</a>
 </div>
 
 </body>
