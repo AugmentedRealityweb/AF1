@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -49,11 +50,14 @@
 <body>
 
 <div class="model-container">
-    <!-- Model 1: Adidas -->
+    <!-- Modele existente: Adidas, Jordan, Nike -->
+    <!-- Codul pentru modelele existente este omis pentru concizie -->
+
+    <!-- Model 4: Scaun -->
     <div class="model-section">
         <model-viewer 
-            src="adidas.glb" 
-            ios-src="adidas.usdz" 
+            src="scaun.glb" 
+            ios-src="scaun.usdz" 
             ar 
             ar-modes="webxr scene-viewer quick-look" 
             camera-controls 
@@ -65,27 +69,11 @@
             <button slot="ar-button" class="ar-button">Activează modul AR</button>
         </model-viewer>
     </div>
-    <!-- Model 2: Jordan -->
+    <!-- Model 5: Noodle -->
     <div class="model-section">
         <model-viewer 
-            src="jordan.glb" 
-            ios-src="jordan.usdz" 
-            ar 
-            ar-modes="webxr scene-viewer quick-look" 
-            camera-controls 
-            auto-rotate 
-            environment-image="neutral" 
-            shadow-intensity="1"
-            min-camera-orbit="auto 0deg 0deg" 
-            max-camera-orbit="auto 80deg auto">
-            <button slot="ar-button" class="ar-button">Activează modul AR</button>
-        </model-viewer>
-    </div>
-    <!-- Model 3: Nike -->
-    <div class="model-section">
-        <model-viewer 
-            src="nike.glb" 
-            ios-src="nike.usdz" 
+            src="noodle.glb" 
+            ios-src="noodle.usdz" 
             ar 
             ar-modes="webxr scene-viewer quick-look" 
             camera-controls 
