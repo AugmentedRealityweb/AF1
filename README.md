@@ -1,4 +1,4 @@
-fadi<html lang="en">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -69,7 +69,6 @@ fadi<html lang="en">
   <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
 </head>
 <body>
-
 <div class="model-container">
   <!-- Model -->
   <div class="model-section">
@@ -88,10 +87,9 @@ fadi<html lang="en">
       max-camera-orbit="auto 80deg auto">
       <button slot="ar-button" class="ar-button">Activează modul AR</button>
     </model-viewer>
-    <p>Noodle</p>
   </div>
   <!-- Buton de navigare înapoi la meniul principal -->
   <a href="https://augmentedrealityweb.github.io/toate-produsele/" class="back-link">Înapoi la meniul principal</a>
 </div>
 </body>
-</html>
+
