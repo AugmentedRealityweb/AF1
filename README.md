@@ -1,4 +1,4 @@
-<html lang="en">
+fadi<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -74,8 +74,8 @@
   <!-- Model -->
   <div class="model-section">
     <model-viewer
-      src="adidas.glb"
-      ios-src="adidas.usdz"
+      src="AF1.glb"
+      ios-src="AF1.usdz"
       ar
       ar-modes="webxr scene-viewer quick-look"
       camera-controls
