@@ -88,6 +88,12 @@
     </model-viewer>
   </div>
   <a href="https://www.titi-valenti.ro/setul-duo-chic-black.html" class="back-link">Înapoi la pagină produs</a>
-  <iframe src="https://app.vectary.com/p/22JteF47kVh5ydhQz33Qwv" frameborder="0" width="100%" height="480"></iframe>
+  <iframe src="https://app.vectary.com/p/22JteF47kVh5ydhQz33Qwv" frameborder="0" width="200" height="300" .model-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 50px;
+    } ></iframe>
 </div>
 </body>
