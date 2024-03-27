@@ -88,6 +88,5 @@
     </model-viewer>
   </div>
   <a href="https://www.titi-valenti.ro/setul-duo-chic-black.html" class="back-link">Înapoi la pagină produs</a>
-<iframe src="https://app.vectary.com/p/4xK6qUBy4pIEmAh4IpRON7" frameborder="0" width="100%" height="480"></iframe>
 </div>
 </body>
