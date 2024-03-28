@@ -1,4 +1,3 @@
-<html lang="ro">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -67,24 +66,6 @@
     }
   </style>
   <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const modelViewer = document.querySelector('model-viewer');
-      
-      // Deactivate auto-rotate initially
-      modelViewer.removeAttribute('auto-rotate');
-
-      // Activate auto-rotate on hover
-      modelViewer.addEventListener('mouseover', function() {
-        modelViewer.setAttribute('auto-rotate', '');
-      });
-
-      // Deactivate auto-rotate when not hovered over
-      modelViewer.addEventListener('mouseout', function() {
-        modelViewer.removeAttribute('auto-rotate');
-      });
-    });
-  </script>
 </head>
 <body>
 <div class="model-container">
@@ -96,6 +77,7 @@
       ar
       ar-modes="webxr scene-viewer quick-look"
       camera-controls
+      auto-rotate
       environment-image="neutral"
       shadow-intensity="1"
       loading="lazy"
